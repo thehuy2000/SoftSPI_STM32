@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"spi_protocol\startup_stm32f103xb.o"
+"spi_protocol\main.o"
+"spi_protocol\stm32f1xx_it.o"
+"spi_protocol\stm32f1xx_hal_msp.o"
+"spi_protocol\stm32f1xx_hal_gpio_ex.o"
+"spi_protocol\stm32f1xx_hal_tim.o"
+"spi_protocol\stm32f1xx_hal_tim_ex.o"
+"spi_protocol\stm32f1xx_hal.o"
+"spi_protocol\stm32f1xx_hal_rcc.o"
+"spi_protocol\stm32f1xx_hal_rcc_ex.o"
+"spi_protocol\stm32f1xx_hal_gpio.o"
+"spi_protocol\stm32f1xx_hal_dma.o"
+"spi_protocol\stm32f1xx_hal_cortex.o"
+"spi_protocol\stm32f1xx_hal_pwr.o"
+"spi_protocol\stm32f1xx_hal_flash.o"
+"spi_protocol\stm32f1xx_hal_flash_ex.o"
+"spi_protocol\stm32f1xx_hal_exti.o"
+"spi_protocol\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "SPI_Protocol\SPI_Protocol.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SPI_Protocol.map" -o SPI_Protocol\SPI_Protocol.axf
